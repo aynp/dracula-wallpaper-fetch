@@ -3,11 +3,11 @@ const path = require('path');
 
 const URL = 'https://api.github.com/repos/aynp/dracula-wallpapers/contents/';
 
-let final = [];
+const final = [];
 
 const processFolder = async function (folderName, folderURL) {
   try {
-    let tmp = {};
+    const tmp = {};
     tmp.name = folderName;
     tmp.walls = [];
 
